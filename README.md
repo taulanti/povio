@@ -6,7 +6,14 @@
 ```
 domain => usecase => interface => infrastructure
 ```
-#### *server.js* is the starting file which contains all initialization and injection
+#### *server.js* is the starting file which contains all initialization and injections
+
+#### Main technologies
+  - **Node js**
+  - **express**
+  - **PostgreSQL**
+  - **Sequelize**
+  - **Mocha** and **Chai**
 
 ### Steps:
 ```
@@ -22,13 +29,13 @@ domain => usecase => interface => infrastructure
   - body params: username and password
   - no auth required
   ```
-  ```
+ ```
 - /login
   - method: POST
   - body params: username and password
   - no auth required
-  ```
-  ```
+ ```
+ ```
 - /me
   - method: GET
   - auth required
