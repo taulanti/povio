@@ -1,0 +1,88 @@
+[
+  {
+    "model": "user",
+    "data": {
+      "id": 100,
+      "username": "John Doe",
+      "password": "Vilnius"
+    }
+  },
+  {
+    "model": "like",
+    "data": {
+      "id": 1000,
+      "user_id": 100,
+      "other_user_id": 200,
+      "user": 100
+    }
+  },
+  {
+    "model": "user",
+    "data": {
+      "id": 200,
+      "username": "taulant",
+      "password": "test"
+    }
+  },
+  {
+    "model": "like",
+    "data": {
+      "id": 2000,
+      "user_id": 200,
+      "other_user_id": 100,
+      "user": 200
+    }
+  },
+  {
+    "model": "user",
+    "data": {
+      "id": 300,
+      "username": "random Doe",
+      "password": "random pass"
+    }
+  },
+  {
+    "model": "like",
+    "data": {
+      "id": 3000,
+      "user_id": 300,
+      "other_user_id": 100,
+      "user": 300
+    }
+  },
+  {
+    "model": "like",
+    "data": {
+      "id": 4000,
+      "user_id": 300,
+      "other_user_id": 200,
+      "user": 300
+    }
+  },
+  {
+    "model": "user",
+    "data": {
+      "id": 400,
+      "username": "John random",
+      "password": "Vrandom"
+    }
+  },
+  {
+    "model": "like",
+    "data": {
+      "id": 5000,
+      "user_id": 400,
+      "other_user_id": 100,
+      "user": 400
+    }
+  },
+  {
+    "model": "like",
+    "data": {
+      "id": 7000,
+      "user_id": 300,
+      "other_user_id": 400,
+      "user": 300
+    }
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "name": "node-clean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "env NODE_ENV=test mocha tests/end-point-test/*.js",
+    "start": "env NODE_ENV=development nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.10.3",
+    "gulp": "3.9.1",
+    "gulp-util": "3.0.8",
+    "mocha": "^3.4.1",
+    "nodemon": "1.11.0"
+  },
+  "dependencies": {
+    "and": "0.0.3",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "chai-http": "^4.3.0",
+    "child-process-promise": "^2.2.1",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "4.15.2",
+    "express-ejs-layouts": "^2.5.0",
+    "express-validator": "^5.3.1",
+    "faker": "^4.1.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "7.4.1",
+    "lodash": "4.17.4",
+    "moment": "2.18.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.8.9",
+    "sequelize-fixtures": "^0.10.0",
+    "supertest": "^4.0.2",
+    "uuid": "3.0.1"
+  }
+}
