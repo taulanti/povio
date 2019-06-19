@@ -13,6 +13,6 @@ exports.assignRoutes = (server, userInteractor, validator) => {
   server.get('/me', verifyToken, getProfile);
   server.get('/user/:id', getUser);
   server.get('/most-liked', getUserList);
-  server.get('/user/:id/like', verifyToken, like);
+  server.post('/user/:id/like', verifyToken, like);
   server.delete('/user/:id/unlike', verifyToken, unlike);
 };

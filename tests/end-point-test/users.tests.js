@@ -196,7 +196,7 @@ describe('User tests: ', () => {
   //! User A likes user B
   it(`should be able to like user with ID 100 and increase the like_count to 4`, (done) => {
     chai.request(app)
-      .get(`/user/${100}/like`)
+      .post(`/user/${100}/like`)
       //.query({ id: 300 })
       .set('Authorization', `Bearer ${token}`)
       .end((err, res) => {
@@ -215,7 +215,7 @@ describe('User tests: ', () => {
       });
   });
 
-  //! User A likes user B
+  //! User A unlikes user B
   it(`should be able to unlike user with ID 100 and decrease the like_count to 3`, (done) => {
     chai.request(app)
       .delete(`/user/${100}/unlike`)
