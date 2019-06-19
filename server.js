@@ -43,6 +43,7 @@ const databaseInterface = new UserDatabaseInterface({
   DatabaseAdapter: UserPostgreSql,
 });
 
+//! userInteractor responsible for operation on user entity
 const userInteractor = new UserInteractor({
   ConfigurationData: configuraionData,
   AuthenticationInterface: authenticationInterface,
@@ -53,12 +54,16 @@ const versionInteractor = new VersionInteractor();
 const webserverInterface = new WebServerInterface({
   VersionInteractor: versionInteractor,
 });
+
+//! used to inject the userValidator into routes
 const { userValidator } = require('./infrastructures/express-validator');
 
 const expressWebServer = new ExpressWebServer({
   WebServerInterface: webserverInterface,
   ConfigurationData: configuraionData,
 });
+
+//! we inject server, userInteractor and validator into server routes
 routes.assignRoutes(expressWebServer.getServer(), userInteractor, userValidator);
 
 const server = expressWebServer.start();

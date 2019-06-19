@@ -1,12 +1,11 @@
 {
-  "name": "node-clean",
+  "name": "povio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "env NODE_ENV=test mocha tests/end-point-test/*.js",
     "start": "env NODE_ENV=development nodemon server.js",
-    "dev": "nodemon server.js"
   },
   "license": "ISC",
   "devDependencies": {
