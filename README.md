@@ -19,10 +19,10 @@ domain => usecase => interface => infrastructure
 ```
 - apply database scripts located in: workspace/database_scripts
 - npm install
-- npm test (for testing)
+- npm test (for testing, takes config data from .env.test)
 - npm start (for production, might need to create .env file similar to  .env.test)
 ```
-###Endpoints
+### Endpoints
 ```
 - /signup
   - method: POST
