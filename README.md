@@ -4,7 +4,9 @@
 
 #### Dependency direction
 ```
-domain => usecase => interface => infrastructure
+domain <-- usecase --> interface <= infrastructure
+--> - contains
+=> - implements
 ```
 #### *server.js* is the starting file which contains all initialization and injections
 
