@@ -28,46 +28,46 @@ domain => usecase => interface => infrastructure
   - method: POST
   - body params: username and password
   - no auth required
-  ```
- ```
+```
+```
 - /login
   - method: POST
   - body params: username and password
   - no auth required
- ```
- ```
+```
+```
 - /me
   - method: GET
   - auth required
-  ```
-  ```
+```
+```
 - /me/update-password
   - method: PUT
   - body params: password
   - auth required
-  ```
-  ```
+```
+```
 - /user/:id
   - method: GET
   - req params: id (target user)
   - no auth required
-  ```
-  ```
+```
+```
 - /user/:id/like
   - method: POST
   - req params: id (target user)
   - auth required
-  ```
-  ```
+```
+```
 - /user/:id/unlike
   - method: DELETE
   - req params: id (target user)
   - auth 
-  ```
-  ```
+```
+```
 - /most-liked
   - method: GET
   - no auth required
-  ```
+```
   
   
